@@ -6,7 +6,7 @@ import time
 import simpleaudio as sa
 
 r = sr.Recognizer()
-openai.api_key = "ENTER_YOUR_PUBLIC_API_KEY"
+openai.api_key = "ENTER_YOUR_API_KEY"
 
 # ----SFX---FUNCTIONS---- #
 
