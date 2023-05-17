@@ -1,0 +1,6 @@
+speech_recognition
+pyttsx3
+openai
+os
+time
+simpleaudio as sa
