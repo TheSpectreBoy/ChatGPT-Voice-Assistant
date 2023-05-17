@@ -6,30 +6,33 @@ import time
 import simpleaudio as sa
 
 r = sr.Recognizer()
-openai.api_key = "ENTER_YOUR_API_KEY"
+openai.api_key = "ENTER_YOUR_PUBLIC_API_KEY"
 
 # ----SFX---FUNCTIONS---- #
 
 def sharingan():
     script_directory = os.path.dirname(os.path.abspath(__file__))
+    sfx_directory = os.path.join(script_directory, "sfx")
     sharingan = "sharingan.wav"
-    sharingan_path = os.path.join(script_directory, sharingan)
+    sharingan_path = os.path.join(sfx_directory, sharingan)
     wave_obj = sa.WaveObject.from_wave_file(sharingan_path)
     play_obj = wave_obj.play()
     play_obj.wait_done()
 
 def end_sharingan():
     script_directory = os.path.dirname(os.path.abspath(__file__))
+    sfx_directory = os.path.join(script_directory, "sfx")
     end_sharingan = "end_sharingan.wav"
-    end_sharingan_path = os.path.join(script_directory, end_sharingan)
+    end_sharingan_path = os.path.join(sfx_directory, end_sharingan)
     wave_obj = sa.WaveObject.from_wave_file(end_sharingan_path)
     play_obj = wave_obj.play()
     play_obj.wait_done()
 
 def jutsu():
     script_directory = os.path.dirname(os.path.abspath(__file__))
+    sfx_directory = os.path.join(script_directory, "sfx")
     jutsu = "jutsu.wav"
-    jutsu_path = os.path.join(script_directory, jutsu)
+    jutsu_path = os.path.join(sfx_directory, jutsu)
     wave_obj = sa.WaveObject.from_wave_file(jutsu_path)
     play_obj = wave_obj.play()
     play_obj.wait_done()
